@@ -1,0 +1,154 @@
+body {
+    background: url(resources/imagery/background.png);
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+    font-family: Poppins;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Poppins;
+    color: #fff;
+    font-size: 5.5vw;
+    font-weight: 500;
+}
+
+span {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(45deg, #049FFB, #66C995);
+    font-family: Poppins;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(30px);
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+nav a:hover,
+nav a.active {
+    color: rgba(0, 0, 0, 0);
+    background-clip: text;
+    background-image: linear-gradient(45deg, #049FFB, #66C995);
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+#about, #youtube, #footer, #copyright {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sectionText {
+    padding-left: 50px;
+    font-size: 22px;
+}
+
+.sectionTitle {
+    padding-right: 50px;
+    text-align: right;
+}
+
+.glass-button {
+    display: inline-block;
+    padding: 16px 48px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+  
+.glass-button:hover {
+    background-color: rgba(255,255,255,0.2);
+    transition: 0.125s linear;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+img {
+    border-radius: 25px;
+}
+
+#footer {
+    min-height: 50vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(45deg, #049FFB, #66C995);
+}
+
+iframe {
+    border-radius: 25px;
+}
+
+.footerContent {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#copyright {
+    min-height: 75px;
+}
