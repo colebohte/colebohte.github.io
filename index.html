@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colebohte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Add favicon -->
+    <!-- Include Tailwind CSS from CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta content="Cole Bohte" property="og:title" />
+    <meta content="Hi, I'm a Developer" property="og:description" />
+    <meta content="https://colebohte.github.io" property="og:url" />
+    <meta content="https://c0lesgamingdev.github.io/cb.png" property="og:image" />
+    <link rel="icon" type="image/x-icon" href="cb.png">
+    <style>
+        /* Custom CSS for Poppins font */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container for the entire page, with a fixed background image -->
+    <div
+        class="min-h-screen text-white"
+        style="background-image: url('bg.png'); background-repeat: repeat; background-attachment: fixed;"
+    >
+        <!-- Navigation Bar -->
+        <nav class="fixed top-0 left-0 right-0 z-50 p-6">
+            <div class="max-w-7xl mx-auto">
+                <!-- Glassmorphic effect for the navigation bar -->
+                <div class="backdrop-blur-md bg-gray-800/20 rounded-2xl border border-white/10 p-4">
+                    <div class="flex justify-between items-center">
+                        <!-- Website Logo/Title - Changed from text to image -->
+                        <img src="colebohte.png" alt="colebohte logo" class="h-6 w-auto object-contain">
+                        <!-- Navigation links for desktop view -->
+                        <div class="hidden md:flex space-x-8">
+                            <a href="#about-me" class="text-white/80 hover:text-white transition-colors duration-300">About Me</a>
+                            <a href="#my-games" class="text-white/80 hover:text-white transition-colors duration-300">My Games</a>
+                            <a href="#youtube-channel" class="text-white/80 hover:text-white transition-colors duration-300">YouTube Channel</a>
+                            <a href="#contact-me" class="text-white/80 hover:text-white transition-colors duration-300">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="pt-32 pb-16 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Glassmorphic effect for the hero content -->
+                <div class="backdrop-blur-md bg-gray-700/20 rounded-3xl border border-white/10 p-12 mb-8">
+                    <!-- Hero Title - Changed from text to image -->
+                    <img src="colebohte.png" alt="colebohte logo" class="h-20 md:h-28 w-auto object-contain mx-auto mb-6">
+                    <p class="text-xl text-white/80 mb-8">
+                        Game Developer • Content Creator • Gaming Enthusiast
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-white hover:bg-gray-200 text-black px-8 py-3 rounded-full text-lg">
+                            View My Games
+                        </button>
+                        <button class="border border-white/30 text-white hover:bg-white/10 px-8 py-3 rounded-full text-lg">
+                            Watch Videos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" class="py-16 px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Glassmorphic effect for the about me content -->
+                <div class="backdrop-blur-md bg-gray-700/20 rounded-3xl border border-white/10 p-8 md:p-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 text-center">About Me</h2>
+                    <div class="prose prose-lg text-white/90 leading-relaxed">
+                        <p class="text-lg">
+                            Hello! I'm Cole, and you might know me as "colebohte" on social media.
+                            I have a deep passion for gaming and game development,
+                            where I spend a lot of my time creating and exploring different games.
+                        </p>
+                        <p class="text-lg mt-4">
+                            As a game developer, I've been actively working on projects across multiple
+                            platforms including itch.io, and Roblox. Each platform offers unique challenges and creative opportunities,
+                            allowing me to bring my ideas to life in new ways.
+                        </p>
+                        <p class="text-lg mt-4">
+                            Whether I'm building immersive games or experimenting with new mechanics,
+                            I'm always excited to share my projects with others and connect with fellow gaming enthusiasts.
+                            Looking forward to creating more and growing as a developer in the gaming community!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Games Section -->
+        <section id="my-games" class="py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-12 text-center">My Games</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Game Card 1: Tank Ball Physics -->
+                    <div class="group">
+                        <div class="backdrop-blur-md bg-gray-700/20 border border-white/10 hover:bg-gray-800/30 transition-all duration-300 transform hover:scale-105">
+                            <div class="p-0">
+                                <div class="relative overflow-hidden rounded-t-lg">
+                                    <img
+                                        src="tbp.png"
+                                        alt="Tank Ball Physics"
+                                        class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                                    />
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                                </div>
+                                <div class="p-6">
+                                    <a
+                                        href="https://river-games.itch.io/tankballphysics2"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-xl font-bold text-white hover:text-blue-400 transition-colors duration-300 flex items-center gap-2"
+                                    >
+                                        Tank Ball Physics
+                                        <!-- External Link Icon (SVG) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                    <p class="text-white/70 mt-2">A ball physics game.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Game Card 2: Obstacle Jumper -->
+                    <div class="group">
+                        <div class="backdrop-blur-md bg-gray-700/20 border border-white/10 hover:bg-gray-800/30 transition-all duration-300 transform hover:scale-105">
+                            <div class="p-0">
+                                <div class="relative overflow-hidden rounded-t-lg">
+                                    <img
+                                        src="obs.png"
+                                        alt="obstacle Jumper"
+                                        class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                                    />
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                                </div>
+                                <div class="p-6">
+                                    <a
+                                        href="https://river-games.itch.io/obstacle-jumper"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-xl font-bold text-white hover:text-blue-400 transition-colors duration-300 flex items-center gap-2"
+                                    >
+                                        Obstacle Jumper
+                                        <!-- External Link Icon (SVG) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                    <p class="text-white/70 mt-2">Jump over and crouch under crap</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Game Card 3: Bad Monki Game -->
+                    <div class="group">
+                        <div class="backdrop-blur-md bg-gray-700/20 border border-white/10 hover:bg-gray-800/30 transition-all duration-300 transform hover:scale-105">
+                            <div class="p-0">
+                                <div class="relative overflow-hidden rounded-t-lg">
+                                    <img
+                                        src="monki.png"
+                                        alt="Bad Monki Game"
+                                        class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                                    />
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                                </div>
+                                <div class="p-6">
+                                    <a
+                                        href="https://river-games.itch.io/monki"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-xl font-bold text-white hover:text-blue-400 transition-colors duration-300 flex items-center gap-2"
+                                    >
+                                        Bad Monki Game
+                                        <!-- External Link Icon (SVG) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                    <p class="text-white/70 mt-2">Avoid spiked walls or die</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Channel Section -->
+        <section id="youtube-channel" class="py-16 px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Glassmorphic effect for the YouTube section content -->
+                <div class="backdrop-blur-md bg-gray-700/20 rounded-3xl border border-white/10 p-8 md:p-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 text-center">YouTube Channel</h2>
+                    <div class="text-center mb-8">
+                        <a
+                            href="https://youtube.com/@colesgaminggames"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg inline-flex items-center gap-3">
+                                <!-- Play Icon (SVG) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                Visit My YouTube Channel
+                                <!-- External Link Icon (SVG) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10">
+                        <div class="aspect-video">
+                            <!-- Embedded YouTube video iframe -->
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src="https://www.youtube.com/embed/ERVl-V6Xgyk"
+                                title="C0LEsGaMinG Channel Trailer"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                                class="rounded-2xl"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact-me" class="py-16 px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Glassmorphic effect for the contact me content -->
+                <div class="backdrop-blur-md bg-gray-700/20 rounded-3xl border border-white/10 p-8 md:p-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-12 text-center">Contact Me</h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Email Contact -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <!-- Mail Icon (SVG) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Email</h3>
+                            <a
+                                href="mailto:colebohte9089@protonmail.com"
+                                class="text-blue-400 hover:text-blue-300 transition-colors"
+                            >
+                                colebohte9089@protonmail.com
+                            </a>
+                        </div>
+                        <!-- Phone Contact (Placeholder) -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <!-- Phone Icon (SVG) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.65A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Phone</h3>
+                            <p class="text-white/70">[placeholder]</p>
+                        </div>
+                        <!-- Discord Contact -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <!-- Message Circle Icon (SVG) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Discord</h3>
+                            <p class="text-blue-400">@colebohte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="py-12 px-6 mt-16">
+            <div class="max-w-6xl mx-auto">
+                <!-- Glassmorphic effect for the footer content -->
+                <div class="backdrop-blur-md bg-gray-700/20 rounded-3xl border border-white/10 p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Logo and Copyright -->
+                        <div class="text-center md:text-left">
+                            <img
+                                src="cb.png"
+                                alt="colebohte logo"
+                                class="w-16 h-16 mx-auto md:mx-0 mb-4 rounded-lg"
+                            />
+                            <p class="text-white/70 text-sm">
+                                © Copyright Cole Bohte, C0LEsGaMinG Games, River Games 2023-2025
+                            </p>
+                        </div>
+
+                        <!-- Footer Sections Navigation -->
+                        <div class="text-center">
+                            <h4 class="text-white font-semibold mb-4">Sections</h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a
+                                        href="#about-me"
+                                        class="text-white/70 hover:text-white transition-colors"
+                                    >
+                                        About Me
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#my-games"
+                                        class="text-white/70 hover:text-white transition-colors"
+                                    >
+                                        My Games
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#youtube-channel"
+                                        class="text-white/70 hover:text-white transition-colors"
+                                    >
+                                        YouTube Channel
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#contact-me"
+                                        class="text-white/70 hover:text-white transition-colors"
+                                    >
+                                        Contact Me
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="text-center">
+                            <h4 class="text-white font-semibold mb-4">Social Media</h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a
+                                        href="https://youtube.com/@colesgaminggames"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-white/70 hover:text-white transition-colors inline-flex items-center gap-2"
+                                    >
+                                        YouTube
+                                        <!-- External Link Icon (SVG) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://discord.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-white/70 hover:text-white transition-colors inline-flex items-center gap-2"
+                                    >
+                                        Discord
+                                        <!-- External Link Icon (SVG) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://itch.io"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-white/70 hover:text-white transition-colors inline-flex items-center gap-2"
+                                    >
+                                        Itch.io
+                                        <!-- External Link Icon (SVG) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://roblox.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-white/70 hover:text-white transition-colors inline-flex items-center gap-2"
+                                    >
+                                        Roblox
+                                        <!-- External Link Icon (SVG) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
