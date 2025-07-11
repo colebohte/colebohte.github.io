@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>colebohte - Game Developer & Content Creator</title>
+    <title>colebohte</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Add favicon -->
     <link rel="icon" type="image/png" href="cb.png">
@@ -19,6 +19,14 @@
         body {
             font-family: 'Poppins', sans-serif;
             cursor: default !important; /* Ensure all cursors are default */
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+        /* Ensure links also have the default cursor */
+        a {
+            cursor: default !important;
         }
     </style>
 </head>
