@@ -1,0 +1,121 @@
+<head>
+    <title>Thank You</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" href="https://cdn.discordapp.com/emojis/1305358610154393750.webp?size=1024">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=VT323&display=swap');
+        /*
+        * CORE SETUP: Ensure full viewport height
+        */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; 
+        }
+
+        /*
+        * BODY CENTERING & BACKGROUND IMAGE LOGIC
+        * The flex settings center the content-box AND the copyright text as a group.
+        */
+        body {
+            /* Flexbox Centering */
+            display: flex; 
+            flex-direction: column; /* Stack items vertically (box and copyright) */
+            justify-content: center; /* Center group vertically */
+            align-items: center; /* Center group horizontally */
+            min-height: 100vh; 
+
+            /* Custom Background Image */
+            background-image: url('https://images.pexels.com/photos/66274/sunset-poppy-backlight-66274.jpeg?cs=srgb&dl=pexels-pixabay-66274.jpg&fm=jpg');
+            background-size: cover;       /* makes it fill the screen */
+            background-repeat: no-repeat; /* no tiling */
+            background-attachment: fixed; /* stays still when you scroll */
+            background-position: center;  /* keeps it centered */
+            background-color: transparent; 
+        }
+
+        /*
+        * STYLING FOR THE CONTENT BOX
+        */
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.2); /* Made more transparent to reveal blur */
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 90%; 
+            width: 450px; 
+            margin: 0;
+
+            /* !!! NEW: Add backdrop-filter for blur effect !!! */
+            backdrop-filter: blur(8px); /* Adjust blur value as needed */
+            -webkit-backdrop-filter: blur(8px); /* For Safari support */
+        }
+
+        /* --- HEADING SIZES --- */
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem; /* Increased margin for better spacing */
+            color: #1f2937;
+        }
+        
+        /* Subheading styling */
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 1.5rem; /* Added top margin to separate from the table/paragraphs */
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+
+        p {
+            font-size: 1rem; 
+            color: #1f2937; 
+            margin-bottom: 1rem; /* Added margin to separate paragraphs */
+        }
+
+        /* --- TABLE STYLING --- */
+        .table-container {
+            width: 100%;
+            table-layout: fixed; 
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .table-container td {
+            padding: 15px 5px;
+            text-align: center;
+            border-top: 1px solid rgba(0, 0, 0, 0.05); 
+        }
+
+        .table-container img {
+            display: block;
+            max-width: 100%;
+            height: auto; 
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <h1>Lest We Forget</h1><br>
+        <p>I have paused access to this site, to remember the people we lost during WWI & WWII</p>
+        <p>On November 11th 1918, WWI came to a halt. That day is now known as Remembrance Day.</p><br>
+        <h2>Heroes never truly die, they just live on in the freedom they fought for.</h2><br>
+        <table class="table-container">
+            <tr>
+                <td><img src="https://cdn.discordapp.com/emojis/1305358610154393750.webp?size=64" alt="Emoji" style="height: 64px;"></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt="Flag of Canada" style="height: 56px;"></td>
+                <td><img src="https://colebohte.github.io/cb.png" alt="CB Logo" style="height: 64px;"></td>
+            </tr>
+        </table>
+    </div>
+    <p style="color: white;">Copyright © Cole Bohte, River Games, C0LEsGaMinG Games 2022-2025</p>
+</body>
