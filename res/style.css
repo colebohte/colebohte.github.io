@@ -1,0 +1,18 @@
+/* Custom styles can be added here. Tailwind v4 handles most styling. */
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Tailwind handles font-family but we keep this as a fallback if needed */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom micro-interactions or overrides */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
